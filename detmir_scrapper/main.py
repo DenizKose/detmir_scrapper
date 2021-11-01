@@ -18,7 +18,7 @@ browser = webdriver.Chrome(service=service, options=options)
 product_url = 'https://www.detmir.ru/product/index/id/'
 msk = 'RU-MOW'
 spb = 'RU-SPE'
-city = spb  # Moscow and region - msk (default), Saint P. and region - spb
+city = msk  # Moscow and region - msk (default), Saint P. and region - spb
 
 
 def city_name():
@@ -71,4 +71,3 @@ while more:
         browser.close()
     step += 30
     time.sleep(2)
-
